@@ -1,4 +1,4 @@
-package za.co.wethinkcode.summative;
+package com.assessment;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
