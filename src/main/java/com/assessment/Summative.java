@@ -1,4 +1,4 @@
-package za.co.wethinkcode.summative;
+package com.assessment;
 
 import java.util.*;
 
