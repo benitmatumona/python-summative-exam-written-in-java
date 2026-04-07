@@ -1,0 +1,85 @@
+=== Question 1 ===
+#Answer below
+a loops in greneral is a code that repeats itself serveral times. There are two
+types of loops, there is a while loop and a for loop.
+
+a while loop repeates the block of code below it as long as the contion specfiled
+when defining it holds. it can even run infinetly. a for loop on the other hand
+loops through and iterable(e.g lists, tuples and strings). it checks each charecter
+one by one in the iterable.
+
+lets apply it in real life. Lets say we are creating a program that stores information 
+for each user (like a student account): we'll need a password inorder to authenticate the 
+user. the problem that we have is we dont know how many times the user will get it
+wrong so we would use a while loop and as long as the user  types in the incorrect 
+password we can keep on propmting in the while loop
+
+lets say this time we have a list of employees and we want to create a program that 
+greets each of them. since we know that the number of times we have to greet will
+be the legnth of the list(or simply we want to loop through the list of employees)
+we would use a for loop. we can use it to loop through the list and greet each employee
+by using for instance print and a formatted string.
+
+=== Question 2 ===
+#Answer below
+a function in python is something that takes in an input(or a number of inputs, 
+or no inputs) and returns an output(it can also return None which is sort of like nothing)
+
+lets talk about how we create on then will talk about how we use one. we creat it
+by first using the def keyword then on the same line we write the name that we want
+the function t be called. we then use curved brackets and a semi-colon afterwards.
+if we want it to take in an input we have to write the name of the parameter(a 
+parameter is kind of like a variable but this time it will store the inputs) inside
+the curved brackets we just created. if we want the function to take in two or more 
+arguments(the actual inputs) the inside the curved brackets we have to put more 
+parameters(according to the number of inputs we want) separeted by a comma. finnally 
+if we want the function to be able to take in any number of arguments we put an
+astrus (*) infront of the parameter
+
+once we define a function we write the logic in the next indentation so that that 
+block of code will excecute whenever the function is called. we use the return keyword
+to give the function an output. If we dont want any output we can return None or
+not return at all (since functions return None by default).
+
+once created we use functions by calling them. we call a function by writing the 
+function name with curved brackets afterwards and inside the fuction we put in 
+the agruments then it will give us a output(or None in the cases specified above)
+
+The benefit of a function is that it prevents repeatation because the block of code
+inside will automatic be used everytime the function is called and it will solve
+this problem. when we want to use a different value we just pass it as an argument
+(it will be  stored in the prameter) and the function will give us an output depending 
+of the inputs(because of the use of the return keyword when defined). 
+
+so logic will now be defined in one place and whenever we want to reuse the same 
+logic instead of looking of it in this big project(and copying and pasting which 
+increase the lines of code making the project complicated), we just call the fuction.
+and the logic will be used 
+
+=== Question 3 ===
+#Answer below
+Api's are a bridge from one programme to another. they allow us to access onther
+programme (which in most cases does not belong to us). they allow differnt systems
+to communicate. API's stand for Application programming interface.
+
+when we search for we website for instence, it sends an http request (https for
+better securite) and gives us the response. there's what we call a status code
+the two most famous ones in my optinion are 200(which means Ok, successful) and 
+404(not found).
+
+there are diffent types of requests that can be made. these will be specfied below
+
+GET - This is a request to view data from their programme
+POST- This is a request to add some thing to their programme (like adding a new
+      post on pinteres)
+PUT - This is to update data that exists on their programme
+Delete - This is to delete data that exists on their programme
+
+all these are only successful if we have access writes and no internal error ouccurs
+on their programme as well, the API request lets us know.
+
+a request is usually made to a url, the url is made up of a base url(the first part
+of the url which will always be used inconnection to that programme) and the endpoint(
+which is the end part).The end point is the specific resourse of the programme that
+we are making a request to.
+
