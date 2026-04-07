@@ -48,28 +48,23 @@ answers.txt
 
 ## 📁 Project Structure
 
-
+```text
 summative-maven/
 ├── pom.xml
 ├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── com/
-│ │ └── assessment/
-│ │ └── Summative.java # Your solutions
-│ │
-│ └── test/
-│ └── java/
-│ └── com/
-│ └── assessment/
-│ └── SummativeTest.java # Unit tests
-│
-├── answers.txt # Theory answers
-└── README.md # Instructions
-
-
----
-
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── assessment/
+│   │               └── Summative.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── assessment/
+│                   └── SummativeTest.java
+├── answers.txt
+└── README.md
+```
 ## ⚙️ Requirements
 
 - Java 17
