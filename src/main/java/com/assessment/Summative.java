@@ -10,7 +10,7 @@ public class Summative {
 
     /**
      * Splits a list of user IDs into batches of at most 5.
-     * 
+     *
      * @param userIds List of user ID strings to dispatch
      * @return A nested List of Lists, each inner list contains at most 5 IDs
      */
@@ -21,7 +21,7 @@ public class Summative {
 
     /**
      * Finds the longest consecutive winning streak.
-     * 
+     *
      * @param streak List of "W" (win) and "L" (loss) strings
      * @return Maximum number of consecutive wins
      */
@@ -32,7 +32,7 @@ public class Summative {
 
     /**
      * Finds local peak temperatures in a list.
-     * 
+     *
      * @param temps List of temperature integers
      * @return List of temperatures that are greater than the ones immediately before and after
      */
@@ -43,7 +43,7 @@ public class Summative {
 
     /**
      * Summarizes total hours per load shedding stage.
-     * 
+     *
      * @param records List of Maps representing incidents with keys "stage" and "duration_hours"
      * @return Map of stage labels ("Stage 1") to total duration (rounded to 2 decimal places)
      */
@@ -54,7 +54,7 @@ public class Summative {
 
     /**
      * Generates a hollow isosceles triangle as a list of strings.
-     * 
+     *
      * @param height Integer height of the triangle
      * @return List of strings, each representing a row of the triangle
      */
