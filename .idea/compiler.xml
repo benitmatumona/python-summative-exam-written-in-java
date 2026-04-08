@@ -9,5 +9,8 @@
         <module name="data-structures-assessment" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="summative-maven" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
