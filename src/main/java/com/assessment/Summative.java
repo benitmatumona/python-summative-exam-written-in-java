@@ -8,6 +8,7 @@ import java.util.*;
  */
 public class Summative {
 
+
     /**
      * Splits a list of user IDs into batches of at most 5.
      *
@@ -15,8 +16,21 @@ public class Summative {
      * @return A nested List of Lists, each inner list contains at most 5 IDs
      */
     public static List<List<String>> batchApiDispatcher(List<String> userIds) {
-        // TODO: Implement this method
-        return new ArrayList<>();
+        List<List<String>> listOfBatch = new ArrayList<>(); 
+        List<String> batch = new ArrayList<>();
+        for (int i = 0; i < userIds.size(); i++) {
+            System.out.println(userIds.get(i));
+            if (i % 5 == 0 && i != 0) {
+                listOfBatch.add(new ArrayList<>(batch));
+                batch.clear();
+            }
+            batch.add(userIds.get(i));
+            System.out.println("List =" + listOfBatch);
+            System.out.println("batch =" + batch);
+        } 
+
+        if (!batch.isEmpty()) listOfBatch.add(batch);
+        return listOfBatch;
     }
 
     /**
@@ -27,7 +41,16 @@ public class Summative {
      */
     public static int winningStreak(List<String> streak) {
         // TODO: Implement this method
-        return 0;
+        String stringOFStreak = "";
+        String[] listOfWins;
+        int longest = 0;
+        for (String outcome: streak) stringOFStreak += outcome;
+        listOfWins = stringOFStreak.split("L");
+        for (String wins: listOfWins) {
+            if (wins.length() > longest) longest = wins.length();
+        }
+        return longest;
+        
     }
 
     /**
@@ -38,7 +61,14 @@ public class Summative {
      */
     public static List<Integer> peakFinder(List<Integer> temps) {
         // TODO: Implement this method
-        return new ArrayList<>();
+        List<Integer> peaks = new ArrayList<>();
+        if (temps == null || temps.isEmpty()) return new ArrayList<>();
+        for (int i = 1; i < temps.size() - 1; i++ ) {
+            if (temps.get(i) > temps.get(i - 1) && temps.get(i) > temps.get(i + 1)) {
+                peaks.add(temps.get(i));
+            }
+        }
+        return peaks;
     }
 
     /**

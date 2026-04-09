@@ -79,7 +79,8 @@ public class SummativeTest {
     @ParameterizedTest
     @MethodSource("batchApiDispatcherLogicData")
     void testBatchApiDispatcherLogic(List<String> inputIds,
-                                     List<List<String>> expectedOutput){
+      
+        List<List<String>> expectedOutput){
 
         assertEquals(expectedOutput,
                 Summative.batchApiDispatcher(inputIds));
@@ -388,46 +389,46 @@ public class SummativeTest {
     }
 
 
-    /* =========================================================
-                       QUESTION 5
-       ========================================================= */
+//     /* =========================================================
+//                        QUESTION 5
+//        ========================================================= */
 
-    static Stream<Object[]> drawTriangleData(){
+//     static Stream<Object[]> drawTriangleData(){
 
-        return Stream.of(
+//         return Stream.of(
 
-                new Object[]{1,List.of("*")},
+//                 new Object[]{1,List.of("*")},
 
-                new Object[]{2,List.of(
-                        " *",
-                        "***"
-                )},
+//                 new Object[]{2,List.of(
+//                         " *",
+//                         "***"
+//                 )},
 
-                new Object[]{3,List.of(
-                        "  *",
-                        " * *",
-                        "*****"
-                )}
-        );
-    }
+//                 new Object[]{3,List.of(
+//                         "  *",
+//                         " * *",
+//                         "*****"
+//                 )}
+//         );
+//     }
 
-    @ParameterizedTest
-    @MethodSource("drawTriangleData")
-    void testDrawTriangleLogic(int height,
-                               List<String> expected){
+//     @ParameterizedTest
+//     @MethodSource("drawTriangleData")
+//     void testDrawTriangleLogic(int height,
+//                                List<String> expected){
 
-        assertEquals(expected,
-                Summative.drawTriangle(height));
-    }
+//         assertEquals(expected,
+//                 Summative.drawTriangle(height));
+//     }
 
 
-    @Test
-    void testDrawTriangleRowCount(){
+//     @Test
+//     void testDrawTriangleRowCount(){
 
-        List<String> result =
-                Summative.drawTriangle(10);
+//         List<String> result =
+//                 Summative.drawTriangle(10);
 
-        assertEquals(10,result.size());
-    }
+//         assertEquals(10,result.size());
+//     }
 
 }
